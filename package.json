@@ -1,0 +1,21 @@
+{
+  "name": "new_electron_project",
+  "version": "1.0.0",
+  "description": "Boilerplate Electron Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-windows": "electron-packager . App --overwrite --platform=win32 --arch=ia32 --icon=assets/Icon.ico --out=dist/release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE string.ProductName=\"Condensify\"",
+    "installer-windows": "node ./build/CreateWindowsInstaller.js"
+  },
+  "author": "James Walsh",
+  "license": "MIT",
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "electron": "^23.0.0",
+    "electron-packager": "^17.1.1",
+    "electron-winstaller": "^5.1.0"
+  }
+}
